@@ -57,8 +57,8 @@ main {
 	text-decoration: none;
 	padding: 0.8rem 2rem;
 	border-radius: 4px;
-	color: #265f58;
-	background-color: #d1fae5;
+	color: #f8f8f8;
+	background-color: #25d366;
 	font-size: 20px;
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 	transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -97,6 +97,21 @@ footer {
 	line-height: 1.4;
 }
 
+.account {
+	background: #00b4db; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#0083b0,
+		#00b4db
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#0083b0,
+		#00b4db
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	margin-left: 24px;
+}
+
 @media only screen and (max-width: 500px) {
 	.box h1 {
 		font-size: 2rem;
@@ -106,5 +121,16 @@ footer {
 	}
 	.box img {
 		width: 125px;
+	}
+	.social {
+		flex-direction: column;
+	}
+	.social a {
+		text-align: center;
+		margin: 16px auto;
+	}
+	.account {
+		margin-left: 0;
+		margin-top: 24px;
 	}
 }
